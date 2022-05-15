@@ -9,14 +9,26 @@ const singerStyle= {
   backgroundColor: 'white'
 }
 function App() {
+  const nayoks= ['Rubel', 'Bappa Raz', 'Hablu']
+ 
   return (
     <div className="App">
-      <Person name="konok" age= "22"></Person>
+  
+         {
+           nayoks.map(nayok=> <Person name={nayok}  > </Person>)
+         }
+        
+{/*         {
+          nayoks.map(nayok=><Friend name={nayok}></Friend>)
+        }
+ */}
+   {/*    <Person name={nayoks[0]} age= "22"></Person>
       <Person name='Billa' age='33'></Person>
-      <Person  name ='Rocky bhai' age='222'></Person>
+      <Person  name ='Rocky bhai' age='222'></Person> */}
     
 
       <h1>Rocky bhai component started</h1>
+
       <Friend name='nur' behave='good'></Friend>
       <Friend name='biplob' behave='not bad'></Friend>
      
@@ -30,8 +42,8 @@ function App() {
 function Person(props){
   return ( 
   <div className='person'>
-    <h1> Name: {props.name} </h1>
-    <p> Age: {props.age}</p>
+    <h1>   {props.name} </h1>
+    <p>   {props.age}</p>
   </div>
   )
 }
