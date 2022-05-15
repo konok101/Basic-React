@@ -11,33 +11,42 @@ const singerStyle= {
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>jsx</h1>
-        <div className="container">
-        <h3>Hello dude. REact how are you!!</h3>  
-        </div>
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
+      <Person></Person>
 
-        <div className="music">
-          <p style={singerStyle}>Number: {num +3} </p>
-          <p style={{backgroundColor:'red', padding: '20px' }}>First singer name {singer1.name} . Title {singer1.job}</p>
-          <p>Secound singer name {singer2.name}. Title {singer2.job}</p>
-        </div>
-       
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Rocky bhai component started</h1>
+      <Friend></Friend>
+      <Friend></Friend>
+      <Friend></Friend>
+      <Friend></Friend>
+      <Friend></Friend>
+     
+
+   
     </div>
   );
 }
 
+function Person(){
+  return ( 
+  <div className='person'>
+    <h1>Sakib all hasen</h1>
+    <p>proffesion: cricter</p>
+  </div>
+  )
+}
+
+function Friend(){
+  return(
+    <div className='container'>
+      <h1>Name: Rocky bhai</h1>
+      <h4>Profession: Maramari</h4>
+    </div>
+  )
+}
 export default App;
